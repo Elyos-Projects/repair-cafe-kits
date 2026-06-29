@@ -1,0 +1,32 @@
+{
+  "id": "repair-cafe-kits-arch-001",
+  "title": "ADRs: content format (decide first), delivery framework, print/PDF, offline, hosting",
+  "project": "repair-cafe-kits",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["right-to-repair", "environment", "software", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "repair-cafe-kits is an openly-licensed, printable, offline-usable set of guides and fixable-item checklists that let anyone run a community repair event and safely triage common items, advancing right-to-repair. This task records the foundational architecture decisions. The content-format ADR must be decided first because the content schema and all authored guides/checklists depend on it; electrical content is a gated high-risk class requiring credentialed-expert sign-off, so the format must be able to express risk class, citations with a reuse-permitted flag, and an expert sign-off record.",
+  "objective": "Record ADRs for: (1) content format (JSON vs MDX, decided first) and how citations/license/risk are enforced in CI; (2) the static delivery framework with i18n/RTL scope as input; (3) print/PDF approach; (4) offline strategy; (5) hosting + versioning.",
+  "acceptanceCriteria": [
+    "ADR #1 selects a content format and specifies how per-unit citations, source license + reusePermitted, risk class, and the high-risk expert sign-off record are validated in CI; this ADR is recorded before the content schema is finalized",
+    "ADR #2 selects an accessibility-first, low-bundle delivery framework with i18n/RTL, bundled offline fonts, and ICU pluralization scope captured as explicit inputs",
+    "ADR #3 selects a print/PDF approach that meets print-legibility requirements (contrast, font size, no color-only meaning)",
+    "ADR #4 records the offline strategy (downloadable print bundle as primary; optional service worker), and ADR #5 records the static hosting + versioning target",
+    "Each ADR states the trademark guardrail (no 'Repair Café' name/logo; generic 'community repair event') and the zero-telemetry/zero-PII posture as binding constraints"
+  ],
+  "resources": [
+    "C:\\Users\\jason\\AppData\\Local\\Temp\\claude\\C--code-elyos\\5eca0d44-6b8b-4c30-9696-37a524cb249a\\scratchpad\\plans\\repair-cafe-kits\\PLAN.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "C:\\code\\elyos\\planning\\projects\\proper-prepper\\PLAN.md"
+  ],
+  "output": "A committed ADR set (5 decisions) covering content format, delivery framework, print/PDF, offline strategy, and hosting, with the content-format ADR decided first and the trademark/privacy guardrails recorded as binding constraints.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}
