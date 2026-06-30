@@ -1,0 +1,31 @@
+{
+  "id": "repair-cafe-kits-sec-026",
+  "title": "Dependency/supply-chain audit + SRI hardening",
+  "project": "repair-cafe-kits",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["software", "right-to-repair"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "As a static site with no backend, repair-cafe-kits has a small but real supply-chain risk in its npm dependencies. Pinned/locked dependencies via the pnpm lockfile reduce drift, but a periodic audit catches known vulnerabilities and unnecessary transitive dependencies. Subresource Integrity (SRI) hashes harden any external resource references that may exist (e.g. if any CDN assets are referenced). This is a recurring maintenance task to be run at least annually or after any significant dependency update.",
+  "objective": "Audit all npm dependencies for known vulnerabilities and unnecessary packages; update or replace problematic dependencies; add SRI hashes to any external resource references where applicable; confirm the pnpm lockfile is up to date.",
+  "acceptanceCriteria": [
+    "pnpm audit (or equivalent) is run and all high/critical severity vulnerabilities are resolved (updated, replaced, or documented as accepted risk with justification)",
+    "Unnecessary or redundant dependencies are identified and removed where feasible; the lockfile is updated and committed",
+    "Any external resource references in the built HTML/CSS (e.g. CDN scripts or stylesheets) have SRI hashes added; if none exist, this is confirmed and documented",
+    "The no-telemetry/PII audit (static + runtime E2E) still passes after dependency updates; pnpm build && pnpm test && pnpm lint pass",
+    "A brief audit report is committed to the repo recording: vulnerabilities found/resolved, dependencies updated, SRI changes made, and the date of the audit"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md",
+    "https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity"
+  ],
+  "output": "A merged PR with resolved dependency vulnerabilities, an updated lockfile, SRI hashes on any external resource references, and a committed audit report.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

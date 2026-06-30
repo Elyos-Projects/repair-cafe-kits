@@ -1,0 +1,30 @@
+{
+  "id": "repair-cafe-kits-content-021",
+  "title": "Open pictogram/icon set for stations + triage (license-clean)",
+  "project": "repair-cafe-kits",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["right-to-repair", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Community repair events benefit from clear visual wayfinding at stations (textile repair, bike repair, electrical triage, etc.) and triage signage. An openly-licensed pictogram/icon set — designed from scratch or sourced from permissively licensed icon libraries — removes the barrier of commissioning custom artwork. All icons must be license-clean: no third-party logos, trademarks, or copyrighted artwork; no 'Repair Café' branding. The preferred license for output is CC-BY-4.0 or a compatible open license. The icon set must be print-legible (sufficient contrast and clarity at small printed sizes).",
+  "objective": "Design or source a license-clean, openly-licensed pictogram/icon set for repair event stations and triage categories, verified free of third-party trademarks or copyrighted artwork, and usable in print at small sizes.",
+  "acceptanceCriteria": [
+    "An icon set covering at least: textile repair station, bike repair station, furniture/wood station, general triage, electrical triage (referral-only), and a 'stop / refer to expert' symbol",
+    "All icons are license-clean: either original works created for this project (MIT or CC-BY-4.0) or sourced from a permissively licensed library (CC0, CC-BY, MIT); source and license recorded for each icon",
+    "No third-party logos, trademarks, or the 'Repair Café' name/logo appear in any icon",
+    "Icons are print-legible: sufficient contrast and clarity when printed at A5 or smaller; a print-smoke test or visual review confirms legibility",
+    "The icon set is committed to the repo with a license file and a provenance record of any sourced icons; output is published under CC-BY-4.0 or MIT as appropriate"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md"
+  ],
+  "output": "A committed, license-clean pictogram/icon set for repair event stations and triage categories, with provenance records for any sourced icons and a print-legibility confirmation.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

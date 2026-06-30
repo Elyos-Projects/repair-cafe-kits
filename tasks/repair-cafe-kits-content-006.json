@@ -1,0 +1,32 @@
+{
+  "id": "repair-cafe-kits-content-006",
+  "title": "Organizer playbook (planning, roles, layout, PII-free intake/triage flow, safety-rules one-pager, wrap-up, local-resource pointers)",
+  "project": "repair-cafe-kits",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["right-to-repair", "environment", "safety", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "The organizer playbook is the primary value artifact for first-time community repair event organizers. It must give end-to-end coverage: planning timeline, venue checklist, roles (host/greeter/triage/fixer/safety lead), station layout, a PII-free item-intake/triage ticket template, volunteer onboarding, a safety-rules one-pager, post-event wrap-up, and pointers (not advice) to local insurance/liability and waste-stream resources. The intake ticket must collect item type + fault + outcome only — no attendee personal data — and must carry a visible 'do not record personal data' notice. Liability/insurance is handled as pointers to local guidance only; no on-platform form ingests personal data.",
+  "objective": "Author the complete organizer playbook covering all required sections, ensure the intake/triage ticket template collects no PII, verify all factual claims are source-cited and license-clean, and have it reviewed by an approver distinct from the author.",
+  "acceptanceCriteria": [
+    "End-to-end coverage so a first-time organizer can plan, staff, and safely run a community repair event; sections include planning timeline, venue checklist, roles, station layout, volunteer onboarding, safety-rules one-pager, post-event wrap-up, and local-resource pointers",
+    "The intake/triage ticket template collects item type, fault description, and outcome only — no attendee name, contact details, or other personal data; a visible 'do not record personal data' notice is present on the template",
+    "Liability and insurance are addressed solely as pointers to local guidance sources, not as advice; no on-platform form collects personal data",
+    "Every factual claim is traceable to a cited, reuse-permitted source; no verbatim copying of copyrighted or NC-licensed text; no third-party logos; no 'Repair Café' name",
+    "The playbook is reviewed by an approver distinct from the author (approvedBy != reviewedBy); a PR-tied review-log entry records both parties, sources checked, and license decisions",
+    "Content is published under CC-BY-4.0; renders from the data-002 schema; passes the CI content-governance gate"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md",
+    "https://openrepairdata.org/"
+  ],
+  "output": "A committed, schema-valid organizer playbook (CC-BY-4.0) with all required sections, a PII-free intake ticket template, source-cited claims, and a PR-tied review-log entry showing distinct author and approver.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

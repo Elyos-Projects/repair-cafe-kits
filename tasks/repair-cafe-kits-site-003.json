@@ -1,0 +1,32 @@
+{
+  "id": "repair-cafe-kits-site-003",
+  "title": "Static, printable, offline-capable delivery skeleton (renders a unit; prints legibly)",
+  "project": "repair-cafe-kits",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["right-to-repair", "environment", "software", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "repair-cafe-kits needs a thin static delivery layer that renders content units for screen and print, works fully offline (no runtime network requests), and ships zero telemetry or PII. The framework is selected by the delivery-framework ADR (arch-001). This skeleton must be accessible-first, support i18n/RTL as a future path, and produce print output that meets legibility requirements (contrast, font size, no color-only meaning), since most field use is on paper in low-connectivity venues.",
+  "objective": "Scaffold the TypeScript/ESM static delivery site using the framework selected in arch-001: render at least one content unit, apply print-optimized CSS (legible contrast, font size, no color-only meaning), enforce zero telemetry (CSP connect-src 'none'), and confirm offline usability via a local print-render smoke test.",
+  "acceptanceCriteria": [
+    "The static site renders a sample content unit (the textiles checklist from content-005 or a stub) using the framework selected by arch-001",
+    "Print-optimized CSS is applied: printed output passes contrast (WCAG AA), minimum font size, and no-color-only-meaning checks in a print-smoke test",
+    "A strict Content Security Policy with connect-src 'none', script-src 'self', img-src 'self', and font-src 'self' is set, blocking all runtime outbound network requests",
+    "The site is fully usable from a local file or a downloadable bundle with no internet connection (verified by a local offline smoke test that passes with network disabled)",
+    "No telemetry scripts, analytics tags, cookies (beyond optional SW), third-party fonts fetched at runtime, or PII fields are present in any template; a static audit confirms this",
+    "The pnpm build produces a distributable artifact; pnpm build && pnpm test && pnpm lint all pass"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md",
+    "https://www.w3.org/TR/WCAG22/"
+  ],
+  "output": "A merged PR containing the TypeScript/ESM static delivery skeleton with print-optimized CSS, CSP header, zero-telemetry posture, and a passing offline/print smoke test.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

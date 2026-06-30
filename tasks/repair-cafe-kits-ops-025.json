@@ -1,0 +1,30 @@
+{
+  "id": "repair-cafe-kits-ops-025",
+  "title": "Annual re-validation pass (electrical units re-checked by SME)",
+  "project": "repair-cafe-kits",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["safety", "right-to-repair"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Safety guidance evolves as official standards, codes, and agency guidance are updated. All content units carry a lastReviewed date; units that have not been reviewed within the re-review cadence defined in ops-019 are flagged as stale. Electrical triage units (riskClass=high) must be re-validated by the credentialed electrical SME annually or sooner on material guidance change. This recurring maintenance task documents the annual re-validation pass, updates lastReviewed dates, and records any content updates triggered by changed guidance.",
+  "objective": "Conduct the annual re-validation pass: check all content units against current guidance, re-validate electrical triage units with the credentialed SME, update lastReviewed dates and content versions where needed, and commit a re-validation report.",
+  "acceptanceCriteria": [
+    "All content units are checked against current official guidance and cited sources; units where guidance has materially changed are updated and re-reviewed by an approver distinct from the author",
+    "Electrical triage units (riskClass=high) are re-validated by the confirmed credentialed electrical SME; the SME's re-validation sign-off (with date and logRef) is recorded in the review log",
+    "lastReviewed dates are updated in the schema for all re-validated units; contentVersion is incremented for any unit whose content changed",
+    "A re-validation report is committed to the repo recording: units reviewed, any content changes made, the SME sign-off for electrical units, and the date of the pass",
+    "The print bundle version and date are updated if any content changed; the CI content-governance gate passes for all updated units"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md"
+  ],
+  "output": "A committed re-validation report with updated lastReviewed dates, any content revisions with distinct approver sign-off, and electrical SME re-validation record; CI passes on all updated units.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

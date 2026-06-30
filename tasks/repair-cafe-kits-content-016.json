@@ -1,0 +1,31 @@
+{
+  "id": "repair-cafe-kits-content-016",
+  "title": "Expand to 7+ reviewed non-electrical categories (add general-mechanical + 1 more)",
+  "project": "repair-cafe-kits",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["right-to-repair", "environment", "safety"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The M1 core toolkit delivered 5 non-electrical triage checklists (furniture/wood, bikes, ceramics/gluing, jewelry/watches, toys). To reach the M3 target of 7+ reviewed non-electrical categories, at least 2 more categories must be authored and reviewed. The PLAN identifies general-mechanical (non-mains items, e.g. battery-powered or manual tools/appliances) and one additional partner-driven category. Category priority should be informed by research-017 (partner input) once available. All units must follow the same citation, license, and review governance as prior content.",
+  "objective": "Author and review at least 2 additional non-electrical triage checklist categories (including general-mechanical and one more, ideally partner-driven), bringing the total reviewed non-electrical categories to 7 or more, with each unit conforming to the data-002 schema and passing CI governance gates.",
+  "acceptanceCriteria": [
+    "At least 2 new non-electrical triage checklist categories are delivered, including general-mechanical (non-mains battery or manual items); the total reviewed non-electrical categories (including those from content-007) reaches at least 7",
+    "Each new unit covers: is-it-worth-fixing assessment, common faults, tools needed, safe-handling notes, and when-to-stop criteria",
+    "Every factual claim in each new unit is source-cited (retrievedDate, sourceLicense, reusePermitted); no verbatim copying of copyrighted or NC-licensed text; no third-party logos; no 'Repair Café' name",
+    "Each unit is reviewed by an approver distinct from the author; a PR-tied review-log entry is written for each unit",
+    "All new units render from the data-002 schema, pass CI content-governance gates, print legibly, and are published under CC-BY-4.0"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md",
+    "https://openrepairdata.org/"
+  ],
+  "output": "At least 2 committed, schema-valid additional non-electrical triage checklist units (CC-BY-4.0), including general-mechanical, bringing the reviewed category total to 7+, each with source-cited claims and distinct reviewer/approver review-log entries.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

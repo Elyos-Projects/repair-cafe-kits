@@ -1,0 +1,30 @@
+{
+  "id": "repair-cafe-kits-content-020",
+  "title": "Easy-read / low-literacy checklist variants",
+  "project": "repair-cafe-kits",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["right-to-repair", "accessibility", "environment"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Some community repair event attendees and volunteer fixers may have limited literacy or cognitive disabilities. Easy-read variants of core triage checklists — using plain language, short sentences, and high-contrast print-legible formatting — extend the kit's reach. These variants must meet the same citation, license, no-self-approval, and accessibility requirements as standard units, and must additionally pass an accessibility review by a reviewer with expertise in easy-read / plain-language standards (e.g. Mencap Easy Read guidelines or equivalent). Content license: CC-BY-4.0.",
+  "objective": "Produce easy-read / low-literacy variants of at least 2 core triage checklists, using plain language, short sentences, and accessible formatting, reviewed by an approver with accessibility and plain-language expertise distinct from the author.",
+  "acceptanceCriteria": [
+    "At least 2 easy-read variants of existing core triage checklists are produced, using plain language (short sentences, common words, active voice), minimal jargon, and supportive formatting",
+    "Each variant is reviewed by an approver with accessibility and plain-language expertise (e.g. knowledge of Mencap Easy Read guidelines or equivalent), distinct from the author; a PR-tied review-log entry is written",
+    "Variants meet print-legibility requirements: WCAG AA contrast, minimum font size, no color-only meaning, and are suitable for printing in low-connectivity venues",
+    "Each variant conforms to the data-002 schema, passes the CI content-governance gate, and is published under CC-BY-4.0",
+    "No third-party logos, trademarks, or the 'Repair Café' name appear in any variant"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md"
+  ],
+  "output": "At least 2 committed, schema-valid easy-read triage checklist variants (CC-BY-4.0), reviewed by an accessibility/plain-language expert distinct from the author, with PR-tied review-log entries.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

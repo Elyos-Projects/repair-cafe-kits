@@ -1,0 +1,31 @@
+{
+  "id": "repair-cafe-kits-feat-024",
+  "title": "Optional service-worker offline cache + content-version manifest/hard-invalidation",
+  "project": "repair-cafe-kits",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["right-to-repair", "software", "safety"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The primary offline distribution is the versioned print bundle. An optional service worker (SW) can additionally cache the web kit for offline use in browsers. However, SW caching of safety-critical content (especially the electrical triage notes) carries a stale-content risk: a corrected electrical safety note must be immediately delivered, not served from a stale cache. The SW must implement a content-version manifest and hard-invalidation mechanism so that corrected safety notes are purged from the cache and re-fetched non-dismissibly. This feature depends on the offline ADR selected in arch-001.",
+  "objective": "Implement an optional service worker that caches the web kit for offline use, with a content-version manifest and hard-invalidation mechanism that ensures corrected safety-critical notes (especially electrical triage content) are immediately re-fetched and never served stale.",
+  "acceptanceCriteria": [
+    "The service worker is optional/progressive: the site functions fully without it (the versioned print bundle remains the primary offline path)",
+    "A content-version manifest lists each cached content unit with a version hash; when a unit's hash changes (e.g. a corrected electrical safety note), the SW hard-invalidates the stale cached version",
+    "The hard-invalidation is non-dismissible: when a cached safety-critical unit has a newer version, the SW forces a re-fetch and updates the cache before serving the new content",
+    "The SW introduces no telemetry, no PII, and no unexpected outbound network requests; the runtime network-interception E2E test passes with the SW active",
+    "The SW is correctly registered and unregistered; the CI offline E2E test passes with the SW both present and absent; pnpm build && pnpm test && pnpm lint pass"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md",
+    "https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API"
+  ],
+  "output": "A merged PR adding an optional service worker with content-version manifest and hard-invalidation for safety-critical content, passing CI no-telemetry/PII and offline E2E tests.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}
