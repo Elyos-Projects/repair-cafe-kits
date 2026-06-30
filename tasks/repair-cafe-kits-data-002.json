@@ -1,0 +1,31 @@
+{
+  "id": "repair-cafe-kits-data-002",
+  "title": "Content-unit schema + provenance/review-log + risk-tier router & high-risk expert-gate rules",
+  "project": "repair-cafe-kits",
+  "type": "data",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["right-to-repair", "environment", "software", "safety"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "repair-cafe-kits requires a structured, versioned content schema that captures every unit's citations, source licenses, review status, expert sign-off (for high-risk electrical content), and disclaimer fields. A risk-tier router classifies each unit at build time and blocks publish of any unit that violates provenance, license, no-self-approval, or (for high-risk units) expert-gate rules. This schema is provisional until the content-format ADR (arch-001) is decided; this task must not be finalized before that ADR lands.",
+  "objective": "Define the RepairUnit schema (all required fields including riskClass, sources with reusePermitted, reviewedBy, approvedBy, expertSignOff, disclaimers, contentLicense, lastReviewed), the review-log format, and the risk-tier router rules that enforce citation/license validity, no-self-approval, and the high-risk expert gate at build time.",
+  "acceptanceCriteria": [
+    "Schema captures all required fields: id, kind, localized title, riskClass, category, localized body, sources[] (org/title/url/retrievedDate/sourceLicense/reusePermitted), reviewStatus, reviewedBy, approvedBy (must differ), optional expertSignOff (name/credential/scopeConfirmed/date/logRef), disclaimers[], lang, contentLicense, contentVersion, lastReviewed",
+    "Risk-tier router classifies each unit as low/medium/high and the build rejects: a unit missing required citations; a unit citing a source whose sourceLicense does not permit the reuse (reusePermitted=false); a unit where approvedBy == reviewedBy",
+    "The build rejects any high-risk (riskClass=high) unit that lacks a valid expertSignOff record or is missing the mandatory 'informational, not a substitute for professional electrical training, inspection, or repair' disclaimer",
+    "Review-log format is PR-tied and append-only, capturing PR number, commit SHA, unit contentVersion, reviewer + approver, expert credential for high-risk units, and sources + licenses checked",
+    "Schema follows the content format selected in arch-001 (this task is finalized after that ADR); the schema file is committed to the repo and the risk-tier router has passing unit tests"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/TASKS.md"
+  ],
+  "output": "A committed content-unit schema definition, review-log format specification, and risk-tier router implementation (with unit tests) that enforce citation validity, license/reusePermitted gate, no-self-approval, and the high-risk expert gate at build time.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

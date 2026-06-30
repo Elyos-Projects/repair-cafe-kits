@@ -1,0 +1,31 @@
+{
+  "id": "repair-cafe-kits-feat-009",
+  "title": "Client-side print bundle / PDF export of the full kit (no server)",
+  "project": "repair-cafe-kits",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["right-to-repair", "software", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Most field use of repair-cafe-kits is on paper in venues with poor connectivity. A downloadable, client-side print bundle or PDF export of the full kit (all checklists + organizer playbook) is the primary distribution mechanism and must work with no server. The print/PDF approach is selected by ADR #3 in arch-001. The bundle must include a visible version number and date so stale paper copies are identifiable in the field. All offline fonts must be bundled — no runtime web-font fetch.",
+  "objective": "Implement a client-side print bundle or PDF export of the full kit (organizer playbook + all triage checklists) that works without a server, includes a visible version and date, bundles all fonts offline, and meets print legibility requirements.",
+  "acceptanceCriteria": [
+    "A user can download or generate a print bundle / PDF of the full kit (organizer playbook + all triage checklists) from the browser with no server-side processing",
+    "The approach used matches the print/PDF ADR selected in arch-001",
+    "The bundle includes a visible version number and date on each page so stale paper copies can be identified",
+    "All fonts are bundled offline — no runtime web-font fetch; the bundle is fully usable with network disabled",
+    "Printed output meets print legibility: WCAG AA contrast, minimum font size, no color-only meaning; a print-smoke CI test confirms this",
+    "The feature introduces no telemetry, no PII capture, and no third-party scripts; pnpm build && pnpm test && pnpm lint pass"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md"
+  ],
+  "output": "A merged PR adding client-side print bundle / PDF export of the full kit with visible version + date, bundled offline fonts, and a passing print-smoke CI test confirming legibility.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

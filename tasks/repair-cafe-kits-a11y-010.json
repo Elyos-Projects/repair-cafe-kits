@@ -1,0 +1,32 @@
+{
+  "id": "repair-cafe-kits-a11y-010",
+  "title": "WCAG 2.2 AA hardening + manual assistive-tech audit + print-legibility audit",
+  "project": "repair-cafe-kits",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["right-to-repair", "accessibility", "software"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "repair-cafe-kits must be usable by everyone, including people with disabilities, and must print legibly since most field use is on paper. WCAG 2.2 AA conformance requires both automated checks and a manual assistive-technology (AT) audit. The AT matrix is: NVDA+Firefox, JAWS+Chrome, VoiceOver+Safari, TalkBack+Chrome, and keyboard-only on each desktop browser. Print legibility requires WCAG AA contrast, minimum font size, and no color-only meaning. This task hardens the delivery skeleton and the print layer to meet these requirements and produces a documented sign-off.",
+  "objective": "Harden the delivery skeleton to WCAG 2.2 AA: fix all critical automated issues, conduct and document a manual AT audit across the full browser/AT matrix, perform a print-legibility audit, and commit the signed-off audit report.",
+  "acceptanceCriteria": [
+    "Automated axe-core and pa11y scans pass with 0 critical issues across all core flows (rendering a checklist, rendering the organizer playbook, the print view)",
+    "A manual AT audit is conducted and documented covering: NVDA+Firefox, JAWS+Chrome, VoiceOver+Safari, TalkBack+Chrome, and keyboard-only navigation on each desktop browser; all blocking issues found are fixed before sign-off",
+    "The manual audit report is committed to the repo, names the qualified reviewer who conducted the audit, and is signed off by that reviewer",
+    "The print-legibility audit passes: all printed content meets WCAG AA contrast ratio, minimum 12pt equivalent font size, and no color-only meaning in any print view",
+    "The AT audit and print-legibility audit are completed before M1 milestone exit and the sign-off cadence is documented (before each future release)"
+  ],
+  "resources": [
+    "https://www.w3.org/TR/WCAG22/",
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md",
+    "https://www.deque.com/axe/"
+  ],
+  "output": "A merged PR with WCAG 2.2 AA fixes, a committed manual AT audit report (full browser/AT matrix, signed off by a qualified reviewer), and a print-legibility audit pass, with 0 critical axe/pa11y issues.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

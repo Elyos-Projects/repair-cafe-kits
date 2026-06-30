@@ -1,0 +1,31 @@
+{
+  "id": "repair-cafe-kits-content-022",
+  "title": "Small-appliance mechanical (non-mains) triage checklist (e.g. battery, manual) — strictly non-mains",
+  "project": "repair-cafe-kits",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["right-to-repair", "environment", "safety"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Battery-powered and manual small appliances (e.g. wind-up clocks, mechanical tools, battery-operated toys, non-mains kitchen gadgets) occupy a middle ground between purely mechanical items and mains-electrical items. A triage checklist for this category helps fixers assess whether a battery or manual appliance is worth repairing, what common faults to look for, and when to stop. Scope is strictly non-mains: no instruction to open mains wiring; items with any mains connection are referred to the electrical triage flow. SME advisory review is recommended given the potential for confusion with mains-electrical items.",
+  "objective": "Author a non-mains small-appliance mechanical triage checklist (battery-powered and manual items), with strict scope guardrails excluding any mains-connected items, sourced from reuse-permitted references, and reviewed by an approver with relevant domain knowledge distinct from the author.",
+  "acceptanceCriteria": [
+    "The checklist covers battery-powered and manually-operated small appliances only; the scope excludes all mains-connected items; a clear 'if the item has a mains plug or cable, refer to the electrical triage flow — do not proceed here' stop rule is present",
+    "Content covers: is-it-worth-fixing assessment, common fault types (battery, switch, mechanism), tools needed, safe-handling notes (including battery disposal guidance), and when-to-stop criteria",
+    "An SME advisory review note is included confirming the scope boundary (non-mains only); the approver has relevant domain knowledge and is distinct from the author",
+    "Every factual claim is source-cited (retrievedDate, sourceLicense, reusePermitted); no verbatim copying of copyrighted or NC-licensed text; no third-party logos; no 'Repair Café' name",
+    "The unit conforms to the data-002 schema, passes CI content-governance gates, prints legibly, and is published under CC-BY-4.0"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md",
+    "https://openrepairdata.org/"
+  ],
+  "output": "A committed, schema-valid non-mains small-appliance mechanical triage checklist (CC-BY-4.0) with explicit mains-exclusion scope guardrail, source-cited claims, and a PR-tied review-log entry with distinct author and approver.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "repair-cafe-kits-content-012",
+  "title": "Electrical safety triage notes (visual red flags, refuse criteria, PAT framing, 'refer to a qualified person') — no mains-repair steps",
+  "project": "repair-cafe-kits",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["safety", "right-to-repair", "environment"],
+  "riskTier": "high",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Electrical items are common at community repair events but pose serious safety risks if handled incorrectly. This high-risk content unit provides conservative triage guidance: visual inspection red flags, criteria for refusing an item (damaged cable/plug, signs of burning, modified wiring), conceptual framing of PAT testing (what it is and that it requires a competent person), and a clear 'refer to a qualified electrician' decision rule. Scope is strictly triage-and-referral-only — no instruction to open, rewire, or repair mains-powered appliances. This unit MUST NOT ship without sign-off from the credentialed electrical SME confirmed in research-011 (distinct from the author), and must carry the mandatory disclaimer. Content license: CC-BY-4.0.",
+  "objective": "Author electrical safety triage notes that are strictly triage-and-referral-only (no mains-repair steps), sourced from paraphrased + cited authoritative references (not verbatim from copyrighted codes), signed off by the credentialed SME from research-011 (distinct from author), and carrying the mandatory 'informational, not a substitute' disclaimer.",
+  "acceptanceCriteria": [
+    "Content is strictly triage-and-referral-only: visual inspection red flags, criteria for refusing an item, conceptual PAT framing, and a 'refer to a qualified electrician' decision rule; zero mains-repair, rewiring, or opening-appliance instruction",
+    "expertSignOff.scopeConfirmed is set to 'triage-and-referral-only' in the schema record",
+    "The mandatory disclaimer is present verbatim: 'This is general safety information, not a substitute for professional electrical training, inspection, or repair. If in doubt, stop and consult a qualified electrician.'",
+    "The content-governance gate passes: the unit has a valid expertSignOff record (name, credential, date, logRef) from the SME confirmed in research-011, who is a different person from the author",
+    "All sources are paraphrased and cited (no verbatim copying of copyrighted codes, agency text, or standards body text); no third-party logos or 'Repair Café' name; reusePermitted verified for each source",
+    "The unit is published under CC-BY-4.0, renders from the data-002 schema, passes all CI content-governance gates, and prints legibly"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md",
+    "https://www.electricalsafetyfirst.org.uk/",
+    "https://www.cpsc.gov/"
+  ],
+  "output": "A committed, schema-valid electrical safety triage notes unit (CC-BY-4.0, riskClass=high) with triage-only scope, mandatory disclaimer, valid expertSignOff record, and a PR-tied review-log entry — passing all CI content-governance gates.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

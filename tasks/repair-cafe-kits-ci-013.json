@@ -1,0 +1,30 @@
+{
+  "id": "repair-cafe-kits-ci-013",
+  "title": "Governance-gate negative test: build blocks a high-risk unit lacking expert sign-off or the mandatory disclaimer (deliberate fixture)",
+  "project": "repair-cafe-kits",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["safety", "software"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The content-governance gate's high-risk expert gate is only trustworthy if it is proven to block non-compliant units — not just allow compliant ones. This task adds deliberate negative-test fixtures that confirm the build fails when a high-risk (riskClass=high) unit is missing its expertSignOff record, and when a high-risk unit is missing the mandatory disclaimer. A third fixture of a fully-compliant high-risk unit must pass the gate. This is a hard safety guarantee: without this negative test, the gate could be silently broken.",
+  "objective": "Add deliberate fixture content units to the test suite: one missing expertSignOff, one missing the mandatory disclaimer, and one fully compliant; confirm the content-governance gate fails the build on the first two and passes on the third.",
+  "acceptanceCriteria": [
+    "A test fixture of a high-risk unit without an expertSignOff record causes the content-governance gate to fail the build with a clear error identifying the missing sign-off",
+    "A test fixture of a high-risk unit without the mandatory 'informational, not a substitute for professional electrical training, inspection, or repair' disclaimer causes the content-governance gate to fail the build with a clear error",
+    "A test fixture of a fully-compliant high-risk unit (with valid expertSignOff and the mandatory disclaimer) passes the content-governance gate",
+    "The three fixtures are committed to the test suite (not to the live content store) and run as part of the standard CI test pass",
+    "pnpm build && pnpm test && pnpm lint pass on the green path with the fully-compliant fixture only"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md"
+  ],
+  "output": "A merged PR adding three content-governance negative/positive test fixtures confirming that the high-risk expert gate fails on missing sign-off, fails on missing disclaimer, and passes on a compliant unit.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

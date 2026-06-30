@@ -1,0 +1,31 @@
+{
+  "id": "repair-cafe-kits-research-017",
+  "title": "Secure named partner org (need, priority categories, languages, endorsement)",
+  "project": "repair-cafe-kits",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["right-to-repair", "environment"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "repair-cafe-kits is 'planning stage; no adopting partner secured yet' — every task carries verifiedNeed: false. To meet the full Definition of Shipped, a named partner organization (a library system, repair network, local council/waste authority, or community-sheds federation) must confirm the need in writing, name their priority item categories and target languages, and endorse the kit. Without a partner, the project can still declare 'Publicly Shipped (generic public good)' 6 months after the M3 build is production-ready, but a named partner is the preferred outcome. This task is pursued in parallel from the start of the project.",
+  "objective": "Identify, approach, and secure a named partner organization that confirms the need for repair-cafe-kits in writing, names priority item categories and target languages, and provides an endorsement (letter of support or MOU); record the outcome and trigger verifiedNeed and requestor updates across tasks.",
+  "acceptanceCriteria": [
+    "A named partner organization is identified and approached from target types: public library system, repair network, local council / waste authority, community / men's sheds federation",
+    "The partner confirms need in writing (letter of support or MOU) and specifies: their priority item categories (to inform content-016 and backlog prioritization) and target language(s) (to inform l10n-015)",
+    "On success, a committed document records the partner org name, contact, confirmation date, priority categories, and target languages; verifiedNeed is updated to true and requestor is set to the named org across relevant tasks in a follow-up PR",
+    "If no partner is secured by 6 months after the M3 production build is ready, the document records the search outcome and the steward + Elyos governance declare 'Publicly Shipped (generic public good)' per the PLAN fallback",
+    "The engagement process must not collect any attendee or community-member PII; partner contact information is stored off-platform per standard data-minimization practice"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md",
+    "https://openrepairdata.org/"
+  ],
+  "output": "A committed document recording the partner outreach outcome: either a named partner's letter of support/MOU with confirmed priority categories and languages, or the search outcome and fallback declaration timeline.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

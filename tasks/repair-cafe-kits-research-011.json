@@ -1,0 +1,31 @@
+{
+  "id": "repair-cafe-kits-research-011",
+  "title": "Recruit + confirm a credentialed electrical SME (licensed/registered electrician or CEng/PE) + target jurisdiction/standards",
+  "project": "repair-cafe-kits",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["safety", "right-to-repair"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "No electrical content in repair-cafe-kits may ship without sign-off from a credentialed electrical expert (a licensed/registered electrician or a chartered/professional electrical engineer — e.g. Part P/NICEIC in the UK, state-licensed electrician in the US, or CEng/PE electrical). This task identifies and confirms that expert, records their credential and jurisdiction, and establishes their willingness to sign off and periodically re-validate content. If this role is not filled, Milestone M2 (electrical triage notes) does not proceed; M0–M1 deliver full value without electrical content.",
+  "objective": "Identify, approach, and confirm a credentialed electrical SME willing to sign off electrical triage content and periodically re-validate it; record their credential, jurisdiction, and agreement; document target jurisdiction(s) and applicable standards that will shape the electrical content framing.",
+  "acceptanceCriteria": [
+    "A credentialed electrical SME is confirmed: either a licensed/registered electrician (e.g. UK Part P/NICEIC, US state-licensed) or a chartered/professional electrical engineer (CEng/PE, electrical specialization); credential type and issuing body are recorded",
+    "The SME's jurisdiction and the applicable electrical standards framework (e.g. UK BS 7671/IET, US NEC, EU Low Voltage Directive) are documented, as these shape content framing and sourcing in content-012",
+    "The SME confirms in writing (email or equivalent) willingness to: sign off the electrical triage content as distinct from the author; periodically re-validate (at least annually or on material guidance change)",
+    "The outcome is recorded in a committed document in the repo with credential, jurisdiction, standards framework, and agreement date",
+    "If no suitable SME is identified and confirmed, the document records the search outcome and explicitly notes that M2 electrical content will not proceed until the role is filled"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md",
+    "https://openrepairdata.org/"
+  ],
+  "output": "A committed document recording the confirmed electrical SME's credential, jurisdiction, applicable standards, and agreement date (or recording the search outcome and M2 block if unfilled).",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

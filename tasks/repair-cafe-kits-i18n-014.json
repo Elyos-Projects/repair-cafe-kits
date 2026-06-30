@@ -1,0 +1,32 @@
+{
+  "id": "repair-cafe-kits-i18n-014",
+  "title": "i18n framework (RTL, bundled offline fonts, ICU plural/select, locale formatting) + completeness check in CI",
+  "project": "repair-cafe-kits",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["right-to-repair", "accessibility", "software"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "repair-cafe-kits must be localizable into multiple languages including right-to-left scripts. The i18n framework must be added before localization work begins so that content and UI strings are keyed by locale from the start. The framework must support RTL layouts, bundle all fonts offline (no runtime web-font fetch), support ICU plural/select message syntax, and handle locale-specific number/date formatting. A CI completeness check must fail if any locale's message catalog is missing translations for keys present in the English source.",
+  "objective": "Integrate an i18n framework into the delivery skeleton supporting RTL layouts, bundled offline fonts, ICU plural/select message syntax, locale-aware formatting, and a CI completeness check that fails on missing translations.",
+  "acceptanceCriteria": [
+    "The delivery skeleton renders correctly in both LTR and RTL layouts; a UI test or snapshot confirms correct RTL mirroring for at least one representative page",
+    "All fonts required for supported locales are bundled in the build artifact — no runtime web-font fetch; confirmed by the network-interception E2E test",
+    "ICU plural/select message syntax is supported in the message catalog; at least one plural form and one select form are exercised in a unit test",
+    "Locale-specific number and date formatting is handled correctly for at least two locale examples (e.g. en-GB and a non-Latin locale)",
+    "A CI completeness check fails the build if any locale's message catalog is missing a translation key present in the English (en) source catalog",
+    "pnpm build && pnpm test && pnpm lint pass; the framework introduces no telemetry and no runtime external requests"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md",
+    "https://unicode-org.github.io/icu/userguide/format_parse/messages/"
+  ],
+  "output": "A merged PR integrating an RTL-capable i18n framework with bundled offline fonts, ICU message support, locale formatting, and a CI catalog-completeness check.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

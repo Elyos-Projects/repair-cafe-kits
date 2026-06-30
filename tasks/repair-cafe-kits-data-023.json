@@ -1,0 +1,31 @@
+{
+  "id": "repair-cafe-kits-data-023",
+  "title": "Optional integration with Open Repair Data Standard for fault patterns",
+  "project": "repair-cafe-kits",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["right-to-repair", "environment", "software"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The Open Repair Alliance's Open Repair Data Standard (ORDS) publishes aggregated repair data from community repair events worldwide, including fault patterns by item category. Integrating ORDS data (where the dataset license permits) could inform triage checklist content with real-world fault frequencies. This is an optional enhancement: license verification per dataset is mandatory before any integration, and only datasets with licenses permitting derivatives/commercial use may be embedded; others are cited/linked only. No PII from ORDS data may be imported.",
+  "objective": "Evaluate ORDS datasets for license compatibility, design and implement an optional integration that surfaces relevant fault-pattern data in triage checklists (or documents that the integration is link-only if no compatible dataset is found), with license verification committed to the repo.",
+  "acceptanceCriteria": [
+    "Each evaluated ORDS dataset has its license reviewed and recorded: dataset name, URL, license, reusePermitted determination, and how it may be used (embedded vs. linked/cited only)",
+    "Any fault-pattern data embedded in checklist content comes only from datasets with licenses permitting derivatives and the use being made (reusePermitted=true); NC or copyrighted datasets are cited/linked only",
+    "No PII from any ORDS dataset (item-owner or volunteer personal data) is imported or surfaced",
+    "The integration (if implemented) is optional/additive and does not break existing content units or CI gates",
+    "A committed document records the license-verification decisions and the integration approach (or records that no compatible datasets were found and all ORDS data is linked/cited only)"
+  ],
+  "resources": [
+    "https://openrepairdata.org/",
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md"
+  ],
+  "output": "A committed license-verification document for evaluated ORDS datasets and (if compatible datasets exist) an optional integration surfacing fault-pattern data in triage checklists, with all embedded data from reusePermitted sources only.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

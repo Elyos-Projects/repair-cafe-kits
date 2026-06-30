@@ -1,0 +1,33 @@
+{
+  "id": "repair-cafe-kits-content-008",
+  "title": "Right-to-repair primer (find manuals/parts; rights overview) — informational, not legal advice",
+  "project": "repair-cafe-kits",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["right-to-repair", "environment"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Many people do not know how to find repair manuals, spare parts, or serial/model information for their devices, nor are they aware of applicable right-to-repair legal frameworks. This primer provides a neutral, product-brand-neutral on-ramp: how to find legitimate manuals and parts sources, and a high-level overview of repair rights frameworks (EU, UK, US). It is strictly informational — not legal advice — and must carry an explicit 'informational, not legal advice' disclaimer. It must not reproduce copyrighted manuals and must not recommend specific products or brands.",
+  "objective": "Author a neutral, sourced right-to-repair primer covering: how to find manuals and spare parts (legitimate sources); a high-level overview of repair-rights frameworks (EU/UK/US); framed as informational only with a prominent 'not legal advice' disclaimer; product/brand-neutral; reviewed for accuracy and neutrality.",
+  "acceptanceCriteria": [
+    "The primer covers: how to find repair manuals (legitimate sources); how to find spare parts; serial/model number identification; a high-level, jurisdiction-aware overview of repair-rights frameworks (EU right-to-repair directive, UK, US state laws) citing authoritative sources",
+    "A prominent 'This primer is informational only and is not a substitute for legal advice. For advice specific to your situation, consult a qualified legal professional.' disclaimer is present",
+    "The primer does not reproduce copyrighted manuals; links to legitimate manual/parts sources only; is product- and brand-neutral with no affiliate links",
+    "Every factual claim cites an authoritative, reuse-permitted source with retrievedDate, sourceLicense, and reusePermitted; no verbatim copying of copyrighted text",
+    "The primer is reviewed for neutrality and accuracy by an approver distinct from the author; a PR-tied review-log entry is written",
+    "Content is published under CC-BY-4.0; renders from the data-002 schema; passes the CI content-governance gate"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md",
+    "https://openrepairdata.org/",
+    "https://repair.eu/"
+  ],
+  "output": "A committed, schema-valid right-to-repair primer (CC-BY-4.0) with the 'not legal advice' disclaimer, neutral and sourced content, and a PR-tied review-log entry showing distinct author and approver.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

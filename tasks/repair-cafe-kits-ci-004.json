@@ -1,0 +1,33 @@
+{
+  "id": "repair-cafe-kits-ci-004",
+  "title": "CI gates: lint, typecheck, unit, content-governance gate, axe a11y, print-smoke, no-telemetry/PII audit",
+  "project": "repair-cafe-kits",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["right-to-repair", "software", "safety", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "All content governance, accessibility, print legibility, and privacy guarantees in repair-cafe-kits are only as strong as the CI gates that enforce them. The content-governance gate must block any unit that violates citation, license/reusePermitted, no-self-approval, or high-risk expert-gate rules. The no-telemetry/PII check must use defense in depth: a static audit for trackers/analytics and PII fields in templates plus a runtime network-interception E2E that fails on any unexpected outbound request. A grep alone is not sufficient. This task depends on site-003 being in place.",
+  "objective": "Wire up the full CI pipeline: lint, typecheck, unit tests, content-governance gate (risk router + citation/license + no-self-approval + high-risk-needs-expert), axe/pa11y accessibility, print-smoke, and the defense-in-depth no-telemetry/PII audit (static check + runtime network-interception E2E with CSP connect-src 'none' asserted).",
+  "acceptanceCriteria": [
+    "CI fails on any lint, typecheck, or unit test error",
+    "The content-governance gate runs at build time and fails the build when: a unit is missing required citations; a unit cites a source with reusePermitted=false for the reuse being made; approvedBy == reviewedBy on any unit; a high-risk unit lacks a valid expertSignOff record; a high-risk unit is missing the mandatory 'informational, not a substitute' disclaimer",
+    "Axe-core or pa11y runs on core rendered pages and fails CI on any critical accessibility violation",
+    "A print-smoke test renders at least one checklist to print and fails CI if the output does not meet contrast, font-size, and no-color-only-meaning requirements",
+    "The no-telemetry/PII audit uses defense in depth: (1) a static audit that checks for trackers, analytics scripts, and PII fields in templates; (2) a runtime Playwright network-interception E2E that fails on any unexpected outbound request; CSP connect-src 'none' is asserted in the E2E",
+    "All gate failures produce actionable error messages identifying the offending file and rule; pnpm build && pnpm test && pnpm lint pass on the green path"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md",
+    "https://www.deque.com/axe/",
+    "https://playwright.dev/"
+  ],
+  "output": "A merged PR adding the full CI pipeline with lint/typecheck/unit, content-governance gate, axe a11y, print-smoke, and defense-in-depth no-telemetry/PII audit (static + runtime E2E).",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

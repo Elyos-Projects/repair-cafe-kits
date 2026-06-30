@@ -1,0 +1,31 @@
+{
+  "id": "repair-cafe-kits-ops-019",
+  "title": "Outcomes-tracking process (organizer self-report, no PII, published waste-estimation method) + re-review cadence",
+  "project": "repair-cafe-kits",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["right-to-repair", "environment"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "repair-cafe-kits collects no telemetry and no attendee PII, so impact is measured by organizer self-report. The self-report template must be privacy-preserving: events run, items assessed/repaired by category, and an estimated waste-diverted figure — never attendee names or contact details. The waste-diverted estimate must use a published, cited per-category weight method, clearly labeled as an estimate (not measured tonnage), with confirmed counts kept separate from estimates. A re-review cadence must be defined (at least annually) to keep content current, with electrical units re-validated by the SME and stale units flagged via lastReviewed.",
+  "objective": "Design and document the organizer self-report template (no PII), publish the per-category waste-estimation methodology with cited weight factors, and define the content re-review cadence (annual minimum, electrical units via SME, stale-content flagging via lastReviewed).",
+  "acceptanceCriteria": [
+    "The organizer self-report template collects: events run, items assessed by category (count), items repaired or repair-attempted by category (count), and estimated waste diverted — no attendee names, contact details, or other personal data; a visible 'do not record personal data' note is on the template",
+    "The waste-diverted estimate methodology is published in the repo: per-category average weights are cited to authoritative, publicly-available sources; the estimate is always labeled as an estimate with its methodology, never as a measured tonnage; confirmed counts and estimates are presented separately",
+    "A re-review cadence is defined and committed: at minimum annual re-review of all content units; electrical triage units re-validated by the confirmed SME; any material change to official safety or standards guidance triggers an immediate re-review; units flagged via lastReviewed when stale",
+    "The print bundle version and date are used to identify stale paper copies in the field; a process for communicating updates to known users (e.g. a versioned changelog) is documented",
+    "The outcomes-tracking process and re-review cadence are committed as a document in the repo"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md",
+    "https://openrepairdata.org/"
+  ],
+  "output": "A committed outcomes-tracking document including the PII-free organizer self-report template, published waste-estimation methodology with cited weight factors, and the defined re-review cadence.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

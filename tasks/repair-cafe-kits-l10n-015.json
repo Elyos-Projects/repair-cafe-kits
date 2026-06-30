@@ -1,0 +1,31 @@
+{
+  "id": "repair-cafe-kits-l10n-015",
+  "title": "Localize core kit (organizer playbook + 2+ checklists) into 2+ non-English languages, safety-accuracy reviewed",
+  "project": "repair-cafe-kits",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["right-to-repair", "environment", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "To reach non-English-speaking communities, the core kit must be localized. Translations of medium and high-risk content are safety-accuracy reviewed (not only fluency-checked), because a mistranslated 'when to stop' criterion or a misrendered safety warning could cause harm. Translations of high-risk (electrical) content must be re-confirmed against the SME-approved source meaning. Source-license and attribution rules apply to translations as derivatives: the same reusePermitted constraints hold. Content license for translated output: CC-BY-4.0. The specific target languages should be partner-driven (research-017); until a partner is named, two commonly requested languages for community repair contexts are used as defaults.",
+  "objective": "Produce safety-accuracy-reviewed translations of the organizer playbook and at least 2 triage checklists into at least 2 non-English languages, conforming to the data-002 schema, with the i18n-014 framework, and passing the CI catalog-completeness check.",
+  "acceptanceCriteria": [
+    "At least 2 non-English language translations are delivered for: the organizer playbook and at least 2 triage checklists (minimum 6 translation units total)",
+    "Each translation is safety-accuracy reviewed — not only fluency-checked — by a competent speaker; a review-log entry records the translator and the safety-accuracy reviewer (distinct persons) for each unit",
+    "Source-license and attribution rules are respected in translated content: translated text is derivative of CC-BY-4.0 source only; sourceLicense and reusePermitted are carried through to the translated units",
+    "If any translated unit covers medium or high riskClass content, the translation has been confirmed for safety-accuracy against the approved English source; high-risk electrical translations are re-confirmed against the SME-approved source meaning",
+    "The CI catalog-completeness check passes for all delivered locales (no missing translation keys vs. the English source)",
+    "All translated units render correctly in the i18n-014 framework (including RTL if applicable), are published under CC-BY-4.0, and pass the CI content-governance gate"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md"
+  ],
+  "output": "Committed translations of the organizer playbook and at least 2 checklists into at least 2 non-English languages (CC-BY-4.0), each safety-accuracy reviewed by a qualified speaker distinct from the translator, with PR-tied review-log entries.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

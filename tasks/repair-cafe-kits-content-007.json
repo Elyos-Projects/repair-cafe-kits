@@ -1,0 +1,33 @@
+{
+  "id": "repair-cafe-kits-content-007",
+  "title": "Non-electrical triage checklist set (furniture/wood, bikes, ceramics/gluing, jewelry, toys) — 5+ categories",
+  "project": "repair-cafe-kits",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["right-to-repair", "environment", "safety"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Volunteer fixers need consistent triage references across common non-electrical repair categories. Each checklist answers: is this item worth fixing, what are the common faults, what tools are needed, what are the safe-handling notes, and when should a fixer stop. The target categories for this task are: furniture/wood, bikes, ceramics/gluing, jewelry/watches, and toys — at least 5 categories. Each unit must be independently source-cited and license-clean; iFixit guides are link-only (CC-BY-NC-SA, not re-mixable). All are low-to-medium risk (no electrical content). Content license: CC-BY-4.0.",
+  "objective": "Author at least 5 non-electrical triage checklists (furniture/wood, bikes, ceramics/gluing, jewelry/watches, toys), each conforming to the data-002 schema, source-cited from reuse-permitted sources, reviewed by an approver distinct from the author, and passing all CI content-governance gates.",
+  "acceptanceCriteria": [
+    "At least 5 separate checklist units are delivered: furniture/wood, bikes, ceramics/gluing, jewelry/watches, and toys",
+    "Each checklist covers: is-it-worth-fixing assessment, common faults, tools needed, safe-handling notes, and clear when-to-stop criteria",
+    "Every factual claim in each checklist is traceable to a cited, reuse-permitted source with retrievedDate, sourceLicense, and reusePermitted recorded; iFixit content is linked, not copied",
+    "No third-party logos, trademarks, or the 'Repair Café' name appear in any unit",
+    "Each unit is reviewed by an approver distinct from the author; a PR-tied review-log entry is written for each unit recording reviewer, approver, and sources checked",
+    "All units render from the data-002 schema, pass the CI content-governance gate, print legibly (WCAG AA contrast, minimum font size, no color-only meaning), and are published under CC-BY-4.0"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md",
+    "https://openrepairdata.org/",
+    "https://www.ifixit.com/"
+  ],
+  "output": "At least 5 committed, schema-valid non-electrical triage checklists (CC-BY-4.0) for furniture/wood, bikes, ceramics/gluing, jewelry/watches, and toys, each with source-cited claims, distinct reviewer/approver, and a PR-tied review-log entry.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

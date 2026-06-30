@@ -1,0 +1,30 @@
+{
+  "id": "repair-cafe-kits-deploy-018",
+  "title": "Production deploy (web + versioned print bundle with visible version+date) + disclaimer/branding terms",
+  "project": "repair-cafe-kits",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["right-to-repair", "software", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "With M1 content and M2 electrical content complete and WCAG 2.2 AA and i18n in place, the kit is ready for production deployment. The hosting target is selected in arch-001 (GitHub Pages / Netlify / Cloudflare Pages — static, no app server). The print bundle must carry a visible version number and date on every page so stale paper copies are identifiable. Branding and disclaimer terms must be documented: no 'Repair Café' name or logo; 'community repair event' generic term; 'not an official or affiliated product unless named endorsement received'; attribution per CC-BY-4.0.",
+  "objective": "Deploy the production build to the static hosting target selected in arch-001, publish a versioned print bundle with visible version+date, and document the disclaimer and branding terms in the site and in a committed policy document.",
+  "acceptanceCriteria": [
+    "The production web build is deployed to the static hosting target selected in arch-001; the deployment is automated from the main branch via CI",
+    "The versioned print bundle is published with a clearly visible version number and date on every page; the bundle is downloadable from the production site",
+    "Disclaimer and branding terms are documented in the site (footer or dedicated page) and in a committed policy document: no 'Repair Café' name/logo; generic 'community repair event' term; 'this kit is not an official or affiliated product unless a named endorsement is on file'; attribution requirements per CC-BY-4.0",
+    "The production site passes the CI no-telemetry/PII audit (static + runtime E2E), WCAG 2.2 AA automated checks, and print-smoke test",
+    "The deployment configuration contains no secrets, API keys, or tokens in committed files; pnpm build && pnpm test && pnpm lint pass"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md"
+  ],
+  "output": "A merged PR configuring production deployment to static hosting with automated CI deploy, a versioned print bundle with visible version+date, and committed disclaimer/branding policy terms.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "repair-cafe-kits-content-005",
+  "title": "Sample non-electrical triage checklist (textiles), source-cited + license-clean",
+  "project": "repair-cafe-kits",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["right-to-repair", "environment", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "repair-cafe-kits needs one concrete, source-cited, license-clean content unit to prove the schema (data-002), the delivery skeleton (site-003), and the CI governance gate (ci-004) all work end-to-end. A textiles/sewing triage checklist is the lowest-risk, highest-utility first unit: it covers is-it-worth-fixing, common faults, tools needed, safe-handling, and when-to-stop — all from openly-licensed or paraphrased + cited sources. Trademark guardrail: the generic term 'community repair event' is used; no 'Repair Café' name or logo appears. Content license: CC-BY-4.0.",
+  "objective": "Author, source-cite, and license-verify a textiles/sewing triage checklist that renders from the data-002 schema, passes the CI content-governance gate, is reviewed by an approver distinct from the author, and prints legibly at WCAG AA contrast with no color-only meaning.",
+  "acceptanceCriteria": [
+    "Every claim in the checklist is traceable to a cited source with retrievedDate, sourceLicense, and reusePermitted recorded; no verbatim copying of copyrighted or NC-licensed text",
+    "No third-party logos, trademarks, or the 'Repair Café' name appear in the content",
+    "The unit is authored conforming to the data-002 schema and passes the CI content-governance gate (citation check, license/reusePermitted check, no-self-approval check)",
+    "The approver (approvedBy) is a different person from the author/reviewer (reviewedBy); a PR-tied, append-only review-log entry is written recording both parties and sources checked",
+    "The checklist renders from the schema via the site-003 delivery skeleton and prints legibly: contrast meets WCAG AA, minimum font size is met, no color-only meaning is used",
+    "Content is published under CC-BY-4.0; outputLicense is CC-BY-4.0"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md",
+    "https://openrepairdata.org/"
+  ],
+  "output": "A committed, schema-valid textiles triage checklist content unit (CC-BY-4.0) that passes all CI governance gates, renders in the delivery skeleton, and prints legibly, with a PR-tied review-log entry showing distinct author and approver.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

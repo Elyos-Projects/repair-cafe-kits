@@ -1,0 +1,30 @@
+{
+  "id": "repair-cafe-kits-content-027",
+  "title": "Event-organizer liability/insurance pointer pack per jurisdiction (pointers, not advice)",
+  "project": "repair-cafe-kits",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["right-to-repair", "safety"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Community repair event organizers frequently ask about liability and insurance. repair-cafe-kits does not provide legal or insurance advice; this pointer pack is a curated list of links to authoritative sources per jurisdiction (UK, US, EU) where organizers can seek local guidance — not a platform form, not legal advice, and not on-platform data collection. The content must carry a prominent 'this is not legal or insurance advice; seek local professional guidance' disclaimer. No verbatim copying of copyrighted legal text; links to authoritative bodies only.",
+  "objective": "Compile a jurisdiction-organized pointer pack (UK, US, and at least one additional region) of authoritative links to liability/insurance guidance sources for community event organizers, with a prominent 'not legal advice' disclaimer and source-cited references, reviewed by an approver distinct from the author.",
+  "acceptanceCriteria": [
+    "The pointer pack covers at least: UK, US, and one additional region (e.g. EU/Ireland/Australia); for each region, links to authoritative sources (e.g. relevant government or established charity/mutual-aid sector guidance on public liability insurance for community events) are provided",
+    "A prominent disclaimer is present on the unit: 'This pointer pack is not legal or insurance advice. Requirements vary by jurisdiction, venue, and activity. Consult a qualified legal or insurance professional for advice specific to your situation.'",
+    "No legal or insurance advice is given; content is limited to pointers to authoritative/official sources; no on-platform form collects personal data",
+    "No verbatim copying of copyrighted legal text; links and paraphrased summaries only; each source has retrievedDate, sourceLicense, and reusePermitted recorded",
+    "The unit is reviewed by an approver distinct from the author; a PR-tied review-log entry is written; the unit conforms to the data-002 schema, passes CI content-governance gates, and is published under CC-BY-4.0"
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/repair-cafe-kits/blob/main/PLAN.md"
+  ],
+  "output": "A committed, schema-valid jurisdiction-organized liability/insurance pointer pack (CC-BY-4.0) with prominent 'not legal advice' disclaimer, sourced links only, and a PR-tied review-log entry with distinct author and approver.",
+  "requestor": "TBD",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
